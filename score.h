@@ -7,9 +7,10 @@ typedef struct _score{
 	char name[20];
 	float avg;
 }Score;
-dMenu(); //전체 메뉴(선택지)를 보여주는 함수
 
-void listRes(Score s[], int count); //전체 리스트를 보여주는 함수
+int scoreMenu(); //전체 메뉴(선택지)를 보여주는 함수
+
+void listScore(Score s[], int count); //전체 리스트를 보여주는 함수
 
 int addData(Score *s); //새로운 식당을 추가하는 함수
 
