@@ -1,4 +1,4 @@
-//05.04.20
+//05.04.2020
 #include "total.h"
 
 int Menu(){
