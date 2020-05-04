@@ -11,7 +11,7 @@ typedef struct _score{
 
 int scoreMenu(); //전체 메뉴(선택지)를 보여주는 함수
 
-void readScore(Score *s); //하나의 데이터를 읽는 함수
+void readScore(Score s); //하나의 데이터를 읽는 함수
 
 void listScore(Score s[], int count); //전체 리스트를 보여주는 함수
 
