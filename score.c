@@ -1,3 +1,4 @@
+//05.04.2020
 #include "total.h"
 
 int addScore(Score *s){
