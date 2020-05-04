@@ -6,6 +6,7 @@ typedef struct _score{
 	int math;
 	char name[20];
 	float avg;
+	int sum;
 }Score;
 
 int scoreMenu(); //전체 메뉴(선택지)를 보여주는 함수
