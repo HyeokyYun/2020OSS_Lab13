@@ -1,3 +1,4 @@
+//05.04.2020
 #include <stdio.h>
 
 typedef struct _score{
