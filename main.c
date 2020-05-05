@@ -21,6 +21,8 @@ int main(void){
 	
 	while(1){
 		choice = Menu():
-		
+		if(choice == 0) break;
 	}
+	printf("==>종료됨!\n");
+	return 0;
 }
