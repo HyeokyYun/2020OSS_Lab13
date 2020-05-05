@@ -22,6 +22,11 @@ int main(void){
 	while(1){
 		choice = Menu():
 		if(choice == 0) break;
+		else if(choice == 1){
+			if(count > 0){
+				readScore(s);
+			}
+		}
 	}
 	printf("==>종료됨!\n");
 	return 0;
