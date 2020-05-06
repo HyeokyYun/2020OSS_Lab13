@@ -22,7 +22,7 @@ int main(void){
 	int curcount = 0;
 	
 	while(1){
-		choice = Menu():
+		choice = Menu();
 		if(choice == 0) break;
 		else if(choice == 1){
 			if(count > 0){
@@ -30,7 +30,7 @@ int main(void){
 			}
 		}
 		else if(choice == 2){
-			count += addScore(&slist[curcount++);
+			count += addScore(&slist[curcount++]);
 		}
 		else if(choice == 3){
 			if(count > 0){
