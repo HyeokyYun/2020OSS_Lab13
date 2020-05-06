@@ -26,7 +26,7 @@ int main(void){
 		if(choice == 0) break;
 		else if(choice == 1){
 			if(count > 0){
-				listScore(slist);
+				listScore(slist, count);
 			}
 		}
 		else if(choice == 2){
