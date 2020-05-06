@@ -27,6 +27,9 @@ int main(void){
 				readScore(s);
 			}
 		}
+		else if(choice == 2){
+			count += addScore(&s);
+		}
 	}
 	printf("==>종료됨!\n");
 	return 0;
