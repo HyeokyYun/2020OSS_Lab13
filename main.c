@@ -16,19 +16,48 @@ int Menu(){
 }
 
 int main(void){
-	Score s;
+	Score slist[100];
 	int choice;
+	int count = 0;
+	int curcount = 0;
 	
 	while(1){
 		choice = Menu():
 		if(choice == 0) break;
 		else if(choice == 1){
 			if(count > 0){
-				readScore(s);
+				listScore(slist);
 			}
 		}
 		else if(choice == 2){
-			count += addScore(&s);
+			count += addScore(&slist[curcount++);
+		}
+		else if(choice == 3){
+			if(count > 0){
+				int select = selectDataNo(slist, curcount);
+				if(select == 0){
+					printf("==> 수정이 취소됩니다.\n");
+					continue;
+				}
+				updateScore(&slist[select -1]);	
+			}
+		}
+		else if(choice == 4){
+			int deletok;
+			if(count > 0){
+				int select = selectDataNo(slist, curcount);
+				if(select == 0){
+					printf("==> 삭제가 취소됩니다.\n");
+					continue;
+				}
+				printf("데이터를 삭제합니다. (삭제:1)");
+				scanf("%d", &deletok);
+				if(deletok == 1){
+					deleteScore(&slist[select - 1]);
+					count--;
+				}
+				else printf("==> 제품삭제 취소");
+			}
 		}
 	}
 	printf("==>종료됨!\n");
